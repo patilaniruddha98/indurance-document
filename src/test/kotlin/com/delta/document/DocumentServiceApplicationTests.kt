@@ -87,7 +87,7 @@ open class DocumentServiceApplicationTests() {
         Assertions.assertEquals(1,policyService!!.getAllDetails().size);
     }
 
-  
+
 
 
 
