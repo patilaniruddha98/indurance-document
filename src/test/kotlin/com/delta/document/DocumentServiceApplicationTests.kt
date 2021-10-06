@@ -87,17 +87,7 @@ open class DocumentServiceApplicationTests() {
         Assertions.assertEquals(1,policyService!!.getAllDetails().size);
     }
 
-    @Test
-    fun simpleGetTest() {
-        val testRestTemplate = TestRestTemplate()
-        val result = testRestTemplate.exchange(
-            URI( "http://localhost:8083/api/policy/policyholders"),
-            HttpMethod.GET,
-            HttpEntity(""),
-            String::class.java)
-        Assertions.assertEquals(HttpStatus.UNAUTHORIZED, result.statusCode)
-        //Assertions.assertEquals("world", result.body)
-    }
+  
 
 
 
